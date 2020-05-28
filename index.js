@@ -1,54 +1,202 @@
-
 "use strict"
 
 
 let circle = document.querySelector('.circle');
-let text = document.querySelector('p')
+let text = document.querySelector('p');
+let body = document.querySelector('body');
 let number = 0;
 let interval;
 let interval2;
+let interval3;
+let interval4;
 const A = () => {
      
 
-    localStorage.getItem('count') == 1 ? text.textContent = 'Не нажимай на кнопку!!! ' : console.log(number);    
+
+    // _____________________________________________________1_____________________________________________________
+
+
     localStorage.getItem('count') == 2 ? text.textContent = 'Я ПРЕДУПРЕДИЛ!!!' : console.log(number);
     localStorage.getItem('count') == 3 ? text.textContent = 'я же сказал не нажимать.....' : console.log(number);
-    localStorage.getItem('count') == 4 ? text.textContent = 'ТЫ ЧТО НЕ ПОНЯЛ????' : console.log(number);
-    localStorage.getItem('count') == 5 ? text.textContent = 'НЕ' : console.log(number);
-    localStorage.getItem('count') == 6 ? text.textContent = 'НА' : console.log(number);
-    localStorage.getItem('count') == 8 ? text.textContent = 'ЖИ' : console.log(number);
-    localStorage.getItem('count') == 9 ? text.textContent = 'МА' : console.log(number);
-    localStorage.getItem('count') == 10 ? text.textContent = 'Й' : console.log(number);
-    localStorage.getItem('count') == 11? text.textContent = 'НА' : console.log(number);
-    localStorage.getItem('count') == 12? text.textContent = 'КНОП' : console.log(number);
-    localStorage.getItem('count') == 13? text.textContent = 'КУ' : console.log(number);
-    localStorage.getItem('count') == 14? text.textContent = '!!!!!!!!!!!!!' : console.log(number);
-// 1
+    localStorage.getItem('count') == 4 ?  text.textContent = 'ТЫ ЧТО НЕ ПОНЯЛ????' : console.log(number);
+
+        if (localStorage.getItem('count') == 5 ) {
+        text.textContent = 'НЕ'
+        body.style.background = '#660000'
+    };
+
+    if (localStorage.getItem('count') == 6 ) {
+        text.textContent = 'НА'
+        body.style.background = '#660033'
+    };
+
+    if (localStorage.getItem('count') == 7 ) {
+        text.textContent = 'ЖИ'
+        body.style.background = '#660066'
+    };
+
+    if (localStorage.getItem('count') == 8 ) {
+        text.textContent = 'МА'
+        body.style.background = '#660099'
+    };
+
+    if (localStorage.getItem('count') == 9 ) {
+        text.textContent = 'Й'
+        body.style.background = '#6600CC'
+    };
+
+    if (localStorage.getItem('count') == 10 ) {
+        text.textContent = 'НА'
+        body.style.background = '#6600FF'
+    };
+
+    if (localStorage.getItem('count') == 11 ) {
+        text.textContent = 'КНОП'
+        body.style.background = '#6633FF'
+    };
+
+    if (localStorage.getItem('count') == 12 ) {
+        text.textContent = 'КУ'
+        body.style.background = '#6666FF'
+    };
+
+    if (localStorage.getItem('count') == 13 ) {
+        text.textContent = '!!!!!!!!!!!!!!!!!'
+        body.style.background = '#6699FF'
+    };
+
+    if (localStorage.getItem('count') == 14 ) {
+        text.textContent = '!!@#$$%^&*(_)()+_)(*&^$$%%$#%##$%&*($@***'
+        body.style.background = '#66CCFF'
+    };
+    
     if( localStorage.getItem('count') == 15  ){
-        text.textContent = 'Сможешь нажать?'; 
+        text.textContent = 'а теперь можешь нажать?'; 
         console.log(number);
         circle.style.opacity = '0'; 
     }   else(circle.style.opacity = '1')
 
-    localStorage.getItem('count') == 16? text.textContent = 'всё ещё непонятно???' : console.log(number);
-    localStorage.getItem('count') == 17? text.textContent = 'НЕ НАЖИМАЙ НА КНОПКУ!!!' : console.log(number);
-    localStorage.getItem('count') == 18? text.textContent = 'ЕЩЁ ОДНО НАЖАТИЕ И МИРУ КОНЕЦ!!' : console.log(number);
-    localStorage.getItem('count') == 19? text.textContent = 'Я ПРЕДУПРЕДИЛ' : console.log(number);
-    localStorage.getItem('count') == 20? text.textContent = 'ЕЩЁ' : console.log(number);
-    localStorage.getItem('count') == 21? text.textContent = 'ОДНО' : console.log(number);
-    localStorage.getItem('count') == 26? text.textContent = 'НАЖАТИЕ' : console.log(number);
-    localStorage.getItem('count') == 22? text.textContent = 'И' : console.log(number);
-    localStorage.getItem('count') == 23? text.textContent = 'МИРУ КОНЕЦ!!!!' : console.log(number);
-    localStorage.getItem('count') == 24? text.textContent = 'попробуй теперь нажать' : console.log(number);
-
-// 2
+    // _____________________________________________________2_____________________________________________________
 
 
-    localStorage.getItem('count') == 25? text.textContent = 'Я ЖЕ СКЗАЛ НЕ НАЖИМАТЬ' : console.log(number);
-    localStorage.getItem('count') == 27? text.textContent = 'ТЫ ХОТЬ ПОНИМАЕШЬ К ЧЕМУ ЭТО ПРИВЕДЁТ?????!!?' : console.log(number);
-    localStorage.getItem('count') == 28? text.textContent = 'К КОНЦУ!!!!!!' : console.log(number);
-    localStorage.getItem('count') == 29? text.textContent = '!!!!!' : console.log(number);
-    localStorage.getItem('count') == 30? text.textContent = 'ВСЁ ЕЩЁ НЕ ПОНЯТНО??' : console.log(number);
+    if( localStorage.getItem('count') == 16 ){
+        text.textContent = 'всё ещё непонятно???'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+    if( localStorage.getItem('count') == 17 ){
+        text.textContent = 'НЕ НАЖИМАЙ НА КНОПКУ!!!'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 18 ){
+        text.textContent = 'ЕЩЁ ОДНО НАЖАТИЕ И МИРУ КОНЕЦ!!'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 19 ){
+        text.textContent = 'Я ПРЕДУПРЕДИЛ'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 20 ){
+        text.textContent = 'ЕЩЁ'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 21 ){
+        text.textContent = 'ОДНО'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    };
+if( localStorage.getItem('count') == 22 ){
+        text.textContent = 'НАЖАТИЕ'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 23 ){
+        text.textContent = 'И'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 24 ){
+        text.textContent = 'МИРУ КОНЕЦ!!!!'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+    
+    if( localStorage.getItem('count') == 25 ){
+        text.textContent = 'попробуй теперь нажать'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 26 ){
+        text.textContent = 'Я ЖЕ СКЗАЛ НЕ НАЖИМАТЬ'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 27 ){
+        text.textContent = 'ТЫ ХОТЬ ПОНИМАЕШЬ К ЧЕМУ ЭТО ПРИВЕДЁТ?????!!?'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 28 ){
+        text.textContent = 'К КОНЦУ!!!!!!'; 
+        console.log(number);
+        circle.style.background = 'url(./src/blue-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 29 ){
+        text.textContent = '!!!!!'; 
+        console.log(number);
+        circle.style.background = 'url(./src/green-btn.png)'
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
+    if( localStorage.getItem('count') == 30 ){
+        text.textContent = 'ВСЁ ЕЩЁ НЕ ПОНЯТНО??'; 
+        console.log(number);
+        circle.style.background = ''
+        circle.style.width = '200px'
+        circle.style.height = '200px'
+    }; 
+
 
 // 3
     if( localStorage.getItem('count') == 31 ){
@@ -56,39 +204,64 @@ const A = () => {
     console.log(number);
     circle.style.opacity = '0'; 
     circle.style.margin =  '15px';
-}   else(circle.style.opacity = '1');
+} 
 
 
-    localStorage.getItem('count') == 32? text.textContent = 'ХОРОШО, но мне кажется..' : console.log(number);
+    if (localStorage.getItem('count') == 32) {
+        circle.style.margin = '0 auto';
+        text.textContent = 'ХОРОШО, но мне кажется..';
+        circle.style.width = '150px'
+        circle.style.height = '150px'
+
+    }
+
+
+
+
+
+
+        // _____________________________________________________3_____________________________________________________
+
+
+
     localStorage.getItem('count') == 33? text.textContent = 'ЧТО ТЕБЕ ВСЁ ЕЩЁ НЕ ПОНЯТНО' : console.log(number);
     localStorage.getItem('count') == 34? text.textContent = 'ТАК ПОНЯТНЕЕ??? '  : console.log(number);
 
+    if( localStorage.getItem('count') == 34 ){
+        text.textContent = 'ТАК ПОНЯТНЕЕ???'; 
+        console.log(number);
+        circle.style.background = ''
+    } 
+    
+    if( localStorage.getItem('count') == 35 ){
+        text.textContent = 'ТАК ПОНЯТНЕЕ???'; 
+        body.style.background = '#663399'
+    } 
 // 4
-
-    // if( localStorage.getItem('count') == 35  ){
-    //     text.textContent = ''; 
-    //     console.log(number);
-    //     circle.style.opacity = '0'; 
-    //     text.style.margin = '50px';
-    // }   else(circle.style.opacity = '1')
-
-    // это не работает, я хотел что б типо в первый раз оно был просто прозрачным, а во второй смещалось
-
-
-    localStorage.getItem('count') == 36? text.textContent = 'хорошо, вижу, ты настроен серьезно ' : console.log(number);
+localStorage.getItem('count') == 36? text.textContent = 'хорошо, вижу, ты настроен серьезно ' : console.log(number);
     localStorage.getItem('count') == 37? text.textContent = 'я дам что ты хочешь, НО ТОЛЬКО ПОСДЕ ОДНОГО НАЖАТИЯ ' : console.log(number);
     localStorage.getItem('count') == 38? text.textContent = ' ХА ХА ЕЩЁ ОДНОГО ' : console.log(number);
-
-    // (*какое-либо действие 4*)
-
     localStorage.getItem('count') == 39? text.textContent = 'ХА ХА ' : console.log(number);
     localStorage.getItem('count') == 40? text.textContent = 'НЕ ПОЛУЧАЕТЬСЯ, ДА?' : console.log(number);
     localStorage.getItem('count') == 41? text.textContent = 'МОЖЕТ ПОТОМУ ЧТО ТЫ МЕНЯ НЕ СЛУШАЛ И НАЖАЛ НА КНОПКУ??' : console.log(number);
     localStorage.getItem('count') == 42? text.textContent = 'ДА, ОПРЕДЕЛЕННО, ИЗ-ЗА ЭТОГО ' : console.log(number);
     localStorage.getItem('count') == 44? text.textContent = 'ВОТ ВИДИШЬ КАК ПЛОХО МЕНЯ НЕ СЛУШАТЬ?' : console.log(number);
-    localStorage.getItem('count') == 45? text.textContent = 'ПОПРОБУЙ ТЕПЕРЬ НАЖАТЬ' : console.log(number);
 
     //  54. (*какое-либо действие 5*)
+
+    if ( localStorage.getItem('count') == 45) {
+        text.textContent = 'ПОПРОБУЙ ТЕПЕРЬ НАЖАТЬ';
+        console.log(number);
+        circle.style.transition = '0.5s';
+       
+        interval2 = setInterval(() => {
+            circle.style.transform = 'translateX(300px)';
+        }, 500);
+        interval =  setInterval(() => {
+        circle.style.transform = 'translateX(-300px)';
+        }, 1000);
+
+    }else {clearInterval(interval);  clearInterval(interval2)}
 
     localStorage.getItem('count') == 46? text.textContent = ' ого, а ты умелый' : console.log(number);
     localStorage.getItem('count') == 47? text.textContent = ' я б даже сказал «продвинутый пользователь компьютера»' : console.log(number);
@@ -105,19 +278,25 @@ const A = () => {
     localStorage.getItem('count') == 58? text.textContent = 'ладно, хорошие попытки' : console.log(number);
     localStorage.getItem('count') == 59? text.textContent = 'отдаю тебе дань уважения ЗА ЭТО ' : console.log(number);
     localStorage.getItem('count') == 63? text.textContent = 'но можешь больше не пытаться, я все равно не услышу' : console.log(number);
-    localStorage.getItem('count') == 60? text.textContent = 'НО ВСЕ РАВНО ПОПРОБУЙ НАДАТЬ ЕЩЁ РАЗ ХА ХА ' : console.log(number);
 
 //  71. 
 //  72. (*какое-либо действие 6*)
 //  73. 
 
-    localStorage.getItem('count') == 61? text.textContent = 'ОГО, ОЧЕНЬ ДАЖЕ НЕПЛОХО' : console.log(number);
-    localStorage.getItem('count') == 62? text.textContent = 'окей, признаю, попытка была хороша, но как ты справишься с ЭТИМ' : console.log(number);
+if( localStorage.getItem('count') == 60 ){
+    text.textContent = 'НО ВСЕ РАВНО ПОПРОБУЙ НАДАТЬ ЕЩЁ РАЗ ХА ХА '; 
+    console.log(number);
+    circle.style.opacity = '0'; 
+    circle.style.margin =  '15px';
+} 
 
-//  76. 
-//  77.  (*какое-либо действие 7*)
-//  78. 
 
+    if (localStorage.getItem('count') == 61) {
+        circle.style.margin = '0 auto';
+        text.textContent = 'ОГО, ОЧЕНЬ ДАЖЕ НЕПЛОХО';
+
+    }
+localStorage.getItem('count') == 62? text.textContent = 'окей, признаю, попытка была хороша, но как ты справишься с ЭТИМ' : console.log(number);
     localStorage.getItem('count') == 64? text.textContent = ' ОГО! НЕ ПЛОХО' : console.log(number);
     localStorage.getItem('count') == 65? text.textContent = 'МОЛОДЕЦ! НО МИР ТЕБЕ Я ВСЕ ТАКИ НЕ ДАМ УНИЧТОЖИТЬ' : console.log(number);
     localStorage.getItem('count') == 66? text.textContent = ' почему ты хочешь уничтожить моё творение?(' : console.log(number);
@@ -155,9 +334,8 @@ const A = () => {
 
 //  111. 
 //  112. (*какое-либо действие 10*)
-//  113. 
-
-    localStorage.getItem('count') == 90? text.textContent = 'опять...' : console.log(number);
+//  113.
+localStorage.getItem('count') == 90? text.textContent = 'опять...' : console.log(number);
     localStorage.getItem('count') == 91? text.textContent = 'опять ты НАЖАЛ!!!!' : console.log(number);
     localStorage.getItem('count') == 92? text.textContent = ' И ЗАЧЕМ???' : console.log(number);
     localStorage.getItem('count') == 93? text.textContent = 'ВОТ ЗАЧЕМ????' : console.log(number);
@@ -174,14 +352,14 @@ const A = () => {
         console.log(number);
         circle.style.transition = '0.5s';
        
-        interval2 = setInterval(() => {
+        interval4 = setInterval(() => {
             circle.style.transform = 'translateX(300px)';
         }, 500);
-        interval =  setInterval(() => {
+        interval3 =  setInterval(() => {
         circle.style.transform = 'translateX(-300px)';
         }, 1000);
 
-    }else {clearInterval(interval);  clearInterval(interval2)}
+    }else {clearInterval(interval3);  clearInterval(interval4)}
 
     localStorage.getItem('count') == 102? text.textContent = ' ОПЯТЬ ТЫ СПРАВИЛСЯ!!' : console.log(number);
     localStorage.getItem('count') == 103? text.textContent = ' блин....(' : console.log(number);
@@ -212,42 +390,20 @@ const A = () => {
 //  152.
 
 
-
-
-
-//     localStorage.getItem('count') == 120? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 121? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 122? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 123? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 124? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 125? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 126? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 127? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 128? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 129? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 130? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 131? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 132? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 133? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 134? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 135? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 136? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 137? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 138? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 139? text.textContent = '' : console.log(number);
-//     localStorage.getItem('count') == 140? text.textContent = '' : console.log(number);
-
 } 
 
 circle.addEventListener('click' , () => {
     circle.classList.add('pressed');
     
+event.target.style.pointerEvents = 'none';
+setTimeout(() => {
+    circle.style.pointerEvents = 'unset';
 
-
+}, 400);
 
     setTimeout(() => {
         circle.classList.remove('pressed');
-    }, 100);
+    }, 400);
 
 
     localStorage.setItem('count', number+1);
